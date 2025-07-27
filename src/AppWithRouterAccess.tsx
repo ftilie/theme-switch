@@ -1,8 +1,7 @@
-import { NavLink, Navigate, Route, RouterProvider, createBrowserRouter, createRoutesFromElements, useLocation, useNavigate } from "react-router-dom";
-import { JSX, lazy, useEffect, useRef } from "react";
-import { Box, Button, Divider, Stack, Theme, useMediaQuery, useTheme } from "@mui/material";
+import { Navigate, Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from "react-router-dom";
+import { JSX, lazy } from "react";
 
-const RootLayout = lazy(() => import("./layouts/RootLayout"));
+const RootLayout = lazy(() => import("~/layouts/RootLayout"));
 
 const router = createBrowserRouter(
     createRoutesFromElements(

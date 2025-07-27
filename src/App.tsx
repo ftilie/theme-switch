@@ -1,7 +1,7 @@
 import { JSX, Suspense } from "react";
 import { ThemeProvider } from "@mui/material";
-import AppWithRouterAccess from "./AppWithRouterAccess";
-import { customMuiTheme } from "./utils/Theme";
+import AppWithRouterAccess from "~/AppWithRouterAccess";
+import { customMuiTheme } from "~/utils/Theme";
 
 function App(): JSX.Element {
     return (
