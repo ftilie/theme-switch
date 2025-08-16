@@ -1,4 +1,4 @@
-import { Stack, styled, Switch, Typography } from "@mui/material";
+import { Stack, Typography } from "@mui/material";
 import { DarkThemeHeaderColor } from "~/utils/Theme";
 import { HEADER_HEIGHT, SIDE_PADDING } from "~/utils/Constants";
 import ThemeSwitch from "../ThemeSwitch/ThemeSwitch";
