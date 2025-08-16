@@ -2,6 +2,7 @@ import { Navigate, Route, RouterProvider, createBrowserRouter, createRoutesFromE
 import { JSX, lazy } from "react";
 
 const RootLayout = lazy(() => import("~/layouts/RootLayout"));
+const HomePage = lazy(() => import("~/pages/HomePage"));
 
 const router = createBrowserRouter(
     createRoutesFromElements(
@@ -13,9 +14,7 @@ const router = createBrowserRouter(
             >
                 <Route index element={<Navigate to="/home" />} />
                 <Route path="*" element={<Navigate to="/home" replace />} />
-                <Route path="home" element={<a>
-                    Page content goes here
-                </a>} />
+                <Route path="home" element={<HomePage />} />
             </Route>
         </>
     )
